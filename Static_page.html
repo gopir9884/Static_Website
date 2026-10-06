@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Website</title>
+
+    <!-- CSS is inside the HTML file -->
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 80vh;
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 12px 25px;
+
+            background: #38bdf8;
+            color: #0f172a;
+
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+            color: white;
+        }
+
+        footer {
+            background: #020617;
+            padding: 20px;
+            color: #94a3b8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h2>My Website</h2>
+
+        <nav>
+            <a href="home_page.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+
+        <h1>
+            Welcome to
+            <span>My Website</span>
+        </h1>
+
+        <p>
+            This website contains both HTML and CSS
+            in a single file. You can create it using
+            Windows Notepad and run it directly in your browser.
+        </p>
+
+        <a href="get_start.html" class="btn">
+            Get Started
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 My Website. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

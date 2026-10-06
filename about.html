@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #222;
+            background: #f8fafc;
+        }
+
+        /* Navbar */
+        nav {
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #2563eb;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+
+        /* About Hero */
+        .about-hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #eff6ff, #ffffff);
+        }
+
+        .about-hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .about-hero h1 span {
+            color: #2563eb;
+        }
+
+        .about-hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #666;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* About Content */
+        .about {
+            padding: 70px 8%;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-image {
+            width: 45%;
+            height: 350px;
+            background: linear-gradient(135deg, #2563eb, #60a5fa);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+        }
+
+        .about-content {
+            width: 55%;
+        }
+
+        .about-content h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 13px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* Mission */
+        .mission {
+            padding: 70px 8%;
+            background: white;
+            text-align: center;
+        }
+
+        .mission h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .mission-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .mission-card {
+            padding: 35px 25px;
+            background: #f8fafc;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .mission-card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .mission-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .mission-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile */
+        @media (max-width: 800px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .about-hero h1 {
+                font-size: 40px;
+            }
+
+            .about {
+                flex-direction: column;
+            }
+
+            .about-image,
+            .about-content {
+                width: 100%;
+            }
+
+            .mission-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MySite</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <a href="#" class="nav-btn">Get Started</a>
+    </nav>
+
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <h1>About <span>Us</span></h1>
+
+        <p>
+            We are passionate about creating simple, beautiful
+            and powerful digital experiences for everyone.
+        </p>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about">
+
+        <div class="about-image">
+            👨‍💻
+        </div>
+
+        <div class="about-content">
+
+            <h2>Who We Are</h2>
+
+            <p>
+                Welcome to MySite! We are a creative team dedicated
+                to building modern websites and digital solutions.
+            </p>
+
+            <p>
+                Our goal is to help individuals and businesses
+                create a strong online presence with beautiful,
+                easy-to-use websites.
+            </p>
+
+            <p>
+                We believe that good design should be simple,
+                useful and accessible to everyone.
+            </p>
+
+            <a href="#" class="btn">Learn More</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Mission Section -->
+    <section class="mission">
+
+        <h2>Our Mission</h2>
+
+        <div class="mission-cards">
+
+            <div class="mission-card">
+                <div class="icon">🎯</div>
+                <h3>Our Goal</h3>
+                <p>
+                    To create high-quality digital experiences
+                    that help people and businesses grow.
+                </p>
+            </div>
+
+            <div class="mission-card">
+                <div class="icon">💡</div>
+                <h3>Innovation</h3>
+                <p>
+                    We continuously explore new ideas and
+                    technologies to improve our work.
+                </p>
+            </div>
+
+            <div class="mission-card">
+                <div class="icon">❤️</div>
+                <h3>Our Values</h3>
+                <p>
+                    We believe in creativity, honesty,
+                    simplicity and customer satisfaction.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MySite. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
